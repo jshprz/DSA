@@ -1,0 +1,84 @@
+## Ignore Visual Studio temporary files, build results, and
+## user-specific files
+
+# Build results
+bin/
+obj/
+[Ll]og/
+out/
+Generated_Code/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.sln.docstates
+*.sdf
+*.cache
+*.dbmdl
+*.VC.db
+*.pdb
+
+# Rider project files
+.idea/
+
+# Visual Studio Code settings
+.vscode/
+
+# Auto-generated files
+*.generated.cs
+
+# Package management
+packages/
+*.nupkg
+*.snupkg
+*.nuspec
+project.lock.json
+project.fragment.lock.json
+
+# DotCover
+*.dotCover
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Publish folder
+publish/
+*.publish.xml
+
+# Dotnet CLI
+*.vspscc
+*.vssscc
+*.vsconfig
+*.DotSettings.user
+
+# Local test results
+TestResults/
+*.trx
+
+# Others
+*.log
+*.tlog
+*.bak
+*.tmp
+*.swp
+*.orig
+*.scc
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Rider
+.idea/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+.vs/
