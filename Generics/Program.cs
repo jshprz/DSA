@@ -47,3 +47,32 @@ foreach (var item in listOfDateTime.GetAllItems())
 {
     Console.WriteLine(item);
 }
+
+var numbers = new List<int> { 1, 2, 3, 4, 5 };
+var minMax = GetMinMax(numbers);
+Console.WriteLine($"\n\nMin: {minMax.Item1}\nMax: {minMax.Item2}");
+
+SimpleTupleGeneric<int, int> GetMinMax(IEnumerable<int> input)
+{
+    if (!input.Any())
+    {
+        throw new InvalidOperationException("Input collection cannot be empty.");
+    }
+
+    int min = input.First();
+    int max = input.First();
+
+    foreach (var number in input)
+    {
+        if (number < min)
+        {
+            min = number;
+        }
+        if (number > max)
+        {
+            max = number;
+        }
+    }
+
+    return new SimpleTupleGeneric<int, int>(min, max);
+}
