@@ -44,4 +44,20 @@ int SumLengths(string text1, string text2)
     return text1.Length + text2.Length;
 }
 
+Console.WriteLine("\n");
+var employees = new List<Employee>
+{
+    new Employee("Jake Smith", "Space Navigation", 25000),
+    new Employee("Anna Blake", "Space Navigation", 29000),
+    new Employee("Barbara Oak", "Xenobiology", 21500),
+    new Employee("Damien Parker", "Xenobiology", 22000),
+    new Employee("Nisha Patel", "Mechanics", 21000),
+    new Employee("Gustavo Sanchez", "Mechanics", 20000),
+};
+var dictionaryPractice = new DictionaryPractice();
+foreach (var employee in dictionaryPractice.CalculateAverageSalaryPerDepartment(employees))
+{
+    Console.WriteLine($"Department: {employee.Key}, Average Salary: {employee.Value}");
+}
+
 delegate void Print(string input);
