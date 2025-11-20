@@ -37,30 +37,23 @@
 
         public static Dictionary<PetType, double> FindMaxWeights(List<Pet> pets)
         {
-            var petsTypes = new Dictionary<PetType, List<Pet>>();
+            var petsTypes = new Dictionary<PetType, List<double>>();
 
             foreach (var pet in pets)
             {
                 if (!petsTypes.ContainsKey(pet.PetType))
                 {
-                    petsTypes[pet.PetType] = new List<Pet>();
+                    petsTypes[pet.PetType] = new List<double>();
                 }
 
-                petsTypes[pet.PetType].Add(pet);
+                petsTypes[pet.PetType].Add(pet.Weight);
             }
 
             var result = new Dictionary<PetType, double>();
 
             foreach (var petsType in petsTypes)
             {
-                double maxWeight = 0;
-
-                foreach (var pet in petsType.Value)
-                {
-                    maxWeight += pet.Weight;
-                }
-
-                result[petsType.Key] = maxWeight;
+                result[petsType.Key] = petsType.Value.Max();
             }
 
             return result;

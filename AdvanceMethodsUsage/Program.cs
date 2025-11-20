@@ -60,4 +60,19 @@ foreach (var employee in dictionaryPractice.CalculateAverageSalaryPerDepartment(
     Console.WriteLine($"Department: {employee.Key}, Average Salary: {employee.Value}");
 }
 
+Console.WriteLine("\n");
+var pet = new List<Pet>
+{
+    new Pet(PetType.Dog, 10),
+    new Pet(PetType.Cat, 5),
+    new Pet(PetType.Fish, 0.9),
+    new Pet(PetType.Dog, 45),
+    new Pet(PetType.Cat, 2),
+    new Pet(PetType.Fish, 0.02),
+};
+foreach (var item in DictionaryPractice.FindMaxWeights(pet))
+{
+    Console.WriteLine($"Pet Type: {item.Key}, Weight: {item.Value}");
+}
+
 delegate void Print(string input);
