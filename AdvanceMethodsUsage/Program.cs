@@ -75,4 +75,18 @@ foreach (var item in DictionaryPractice.FindMaxWeights(pet))
     Console.WriteLine($"Pet Type: {item.Key}, Weight: {item.Value}");
 }
 
+Console.WriteLine("\n");
+var listOfNumbers = new List<int> { 10, 12, -100, 55, 17, 22 };
+var filteringStrategySelector = new FilteringStrategySelector();
+Console.WriteLine("Select filter:");
+Console.WriteLine(string.Join(Environment.NewLine, filteringStrategySelector.FilteringStrategiesNames));
+var userInput = Console.ReadLine() ?? string.Empty;
+var filteringStrategy = new FilteringStrategySelector().Select(userInput);
+IEnumerable<int> result = new Filter().FilterBy(filteringStrategy, listOfNumbers);
+Print(result);
+void Print(IEnumerable<int> numbers)
+{
+    Console.WriteLine(string.Join(", ", numbers));
+}
+
 delegate void Print(string input);
