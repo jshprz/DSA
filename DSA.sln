@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvanceMethodsUsage", "Adva
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CachingImplementation", "CachingImplementation\CachingImplementation.csproj", "{9326D9C0-CE09-4085-B4F2-CD80B114C9AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{2F5D2BCB-E9B2-40FB-BE9C-1EE596DE53D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9326D9C0-CE09-4085-B4F2-CD80B114C9AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9326D9C0-CE09-4085-B4F2-CD80B114C9AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9326D9C0-CE09-4085-B4F2-CD80B114C9AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F5D2BCB-E9B2-40FB-BE9C-1EE596DE53D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F5D2BCB-E9B2-40FB-BE9C-1EE596DE53D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F5D2BCB-E9B2-40FB-BE9C-1EE596DE53D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F5D2BCB-E9B2-40FB-BE9C-1EE596DE53D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
