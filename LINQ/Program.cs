@@ -34,3 +34,9 @@ any.TestAny();
 
 var all = new All();
 all.TestAll();
+
+var count = new Count();
+count.TestCount();
+
+var orderBy = new OrderBy();
+orderBy.TestOrderBy();

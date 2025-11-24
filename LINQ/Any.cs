@@ -51,7 +51,7 @@
             Weight = weight;
         }
 
-        public override string ToString() => $"{PetType}, {Weight} kilos";
+        public override string ToString() => $"Id: {Id}, Name: {Name}, Type: {PetType}, {Weight} kilos";
     }
     public enum PetType { Dog, Cat, Fish }
 }
