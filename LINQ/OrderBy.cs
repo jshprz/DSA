@@ -34,6 +34,16 @@
             {
                 Console.WriteLine(pet); 
             }
+
+            var petsOrderedByTypeThenName = pets
+                .OrderBy(pet => pet.PetType)
+                .ThenBy(pet => pet.Name);
+
+            Console.WriteLine("\n");
+            foreach (var pet in petsOrderedByTypeThenName)
+            {
+                Console.WriteLine(pet);
+            }
         }
     }
 }
