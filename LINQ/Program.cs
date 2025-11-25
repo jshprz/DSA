@@ -40,3 +40,6 @@ count.TestCount();
 
 var orderBy = new OrderBy();
 orderBy.TestOrderBy();
+
+var firstAndLast = new FirstAndLast();
+firstAndLast.TestFirstAndLast();
