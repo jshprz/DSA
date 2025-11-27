@@ -46,3 +46,6 @@ firstAndLast.TestFirstAndLast();
 
 var where = new Where();
 where.TestWhere();
+
+var distinct = new Distinct();
+distinct.TestDistinct();
