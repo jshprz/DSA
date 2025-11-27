@@ -43,3 +43,6 @@ orderBy.TestOrderBy();
 
 var firstAndLast = new FirstAndLast();
 firstAndLast.TestFirstAndLast();
+
+var where = new Where();
+where.TestWhere();
