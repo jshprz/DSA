@@ -49,3 +49,6 @@ where.TestWhere();
 
 var distinct = new Distinct();
 distinct.TestDistinct();
+
+var select = new Select();
+select.TestSelect();
