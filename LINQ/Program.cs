@@ -52,3 +52,6 @@ distinct.TestDistinct();
 
 var select = new Select();
 select.TestSelect();
+
+var average = new Average();
+average.TestAverage();
